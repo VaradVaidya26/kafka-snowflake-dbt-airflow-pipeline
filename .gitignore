@@ -1,26 +1,31 @@
-# GitHub Actions cache
-/.github/.cache
+# Virtual environment
+dbt-env/
 
-# Docker cache
+# Python
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# IDEs
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# dbt artifacts (IMPORTANT: only ignore generated files)
+target/
+logs/
+.dbt/
+
+# Docker
 docker/logs/
 docker/minio/
 docker/plugins/
 docker/postgres/
-
-# DBT cache
-banking_dbt/.dbt/
-banking_dbt/analyses/
-banking_dbt/logs/
-banking_dbt/macros/
-banking_dbt/seeds/
-banking_dbt/target/
-banking_dbt/tests/
-
-.env
-__pycache__/
-*.pyc
-.vscode/
-.idea/
-.DS_Store
 docker-compose.override.yml
-logs/
+
+# GitHub cache
+.github/.cache
