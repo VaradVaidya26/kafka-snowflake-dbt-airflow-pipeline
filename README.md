@@ -10,11 +10,7 @@ The pipeline includes streaming data ingestion using Kafka, change data capture 
 
 ## Architecture
 
-[Add architecture diagram here]
-
-Data Generator → Kafka → Debezium → PostgreSQL → Snowflake → dbt → Analytics Layer  
-                                             ↓  
-                                     Apache Airflow Orchestration  
+<img width="1300" height="633" alt="Screenshot 2026-04-16 160657" src="https://github.com/user-attachments/assets/c064d4db-7782-4125-b903-eb7896f16e9c" />
 
 ---
 
